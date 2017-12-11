@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page-wrap">
     <navbar/>
     <nuxt/>
   </div>
@@ -24,7 +24,9 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
-
+.nav-container{
+  z-index: 1000;
+}
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0;

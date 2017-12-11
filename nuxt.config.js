@@ -1,5 +1,3 @@
-const vueLoader = webpackConfig.module.rules.find((rule) => rule.loader === 'vue-loader')
-vueLoader.options.loaders.sass = 'vue-style-loader!css-loader!sass-loader'
 module.exports = {
   /*
   ** Headers of the page
@@ -16,10 +14,13 @@ module.exports = {
     ]
   },
   css: [
-    // 项目中的 Sass 文件
-    { src: '~/css/global.css', lang: 'css' } // 指定 scss 而非 sass
+    { src: '~/css/global.css'},
+    'video.js/dist/video-js.css'
   ],
-  plugins: ['~plugins/vue-awesome'],
+  plugins: [
+    '~plugins/vue-awesome',
+    { src: '~plugins/nuxt-video-player-plugin.js', ssr: false }
+  ],
   /*
   ** Customize the progress bar color
   */
@@ -39,6 +40,10 @@ module.exports = {
           loader: 'eslint-loader',
           exclude: /(node_modules)/
         })
+        const vueLoader = config.module.rules.find(r => r.loader === 'vue-loader')
+        vueLoader.options.transformToRequire = {
+          video: 'poster'
+        }
       }
     }
   }
