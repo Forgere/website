@@ -19,7 +19,8 @@ module.exports = {
   ],
   plugins: [
     '~plugins/vue-awesome',
-    { src: '~plugins/nuxt-video-player-plugin.js', ssr: false }
+    { src: '~plugins/nuxt-video-player-plugin.js', ssr: false },
+    { src: '~plugins/routetrigger.js', ssr: false }
   ],
   /*
   ** Customize the progress bar color

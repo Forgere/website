@@ -2,13 +2,16 @@
   <div class="page-wrap">
     <navbar/>
     <nuxt/>
+    <footbar/>
   </div>
 </template>
 <script>
 import navbar from '../components/nav.vue'
+import footbar from '../components/footer.vue'
 export default {
   components: {
-    navbar: navbar
+    navbar: navbar,
+    footbar: footbar
   }
 }
 </script>

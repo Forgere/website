@@ -3,6 +3,9 @@
         <div class="logo">
             <img src="~/assets/logo.png" alt="">
         </div>
+        <div class="nav-wrap">
+          <icon name="bars" scale="2" class="menu"></icon>
+        </div>
         <nav>
             <img src="~/assets/logo.png" alt="">
             <div class="nav-item">
@@ -10,18 +13,15 @@
                     <icon name="home" scale="1.2"></icon>
                 </nuxt-link> 
             </div>
-            <div class="nav-item nav-subs">
+            <div class="nav-item">
                 <nuxt-link to="/about" :class="{'active': routepath === '/about'}">关于我们</nuxt-link>
-                <ul class="subs">
-                    <li class="sub-item">
-                        <nuxt-link to="/about/intro">公司介绍</nuxt-link>
-                    </li>
-                    <li class="sub-item">
-                        <nuxt-link to="/about/news">公司新闻</nuxt-link>
-                    </li>
-                </ul>
             </div>
             <div class="nav-item">
+                <nuxt-link to="/news" :class="{'active': routepath === '/news'}">
+                  公司新闻
+                </nuxt-link>
+            </div>
+            <div class="nav-item nav-subs">
                 <nuxt-link to="/project">项目案例</nuxt-link>
                 <ul class="subs">
                     <li class="sub-item">
@@ -103,12 +103,11 @@ export default {
   },
   mounted () {
     let lastScrollTop = 0
+    let el = document.querySelectorAll('.nav-container')[0]
     window.addEventListener('scroll', function (e) {
       let pagey = window.pageYOffset
-      let el = document.querySelectorAll('.nav-container')[0]
       if (pagey > 100) {
         // 下滑消失
-        console.log(pagey > lastScrollTop, lastScrollTop)
         if (pagey > lastScrollTop) {
           el.classList.remove('show')
           el.classList.add('hide')
@@ -123,6 +122,14 @@ export default {
       }
       lastScrollTop = window.pageYOffset
     })
+    let menu = document.querySelectorAll('.nav-wrap .menu')[0]
+    menu.addEventListener('click', function (e) {
+      if (el.classList.contains('open')) {
+        el.classList.remove('open')
+      } else {
+        el.classList.add('open')
+      }
+    }, false)
   }
 }
 </script>
@@ -139,6 +146,12 @@ export default {
     .logo img{
         float: left;
     }
+    .nav-wrap .menu{
+      display: none;
+      float: right;
+      margin-right: 40px;
+      color: white;
+    }
     nav{
         position:absolute;
         left: 0;
@@ -150,6 +163,35 @@ export default {
         font-weight: 100;
         transition: all .3s ease-in-out;
     }
+    @media (max-width: 1280px) {
+        .nav-wrap .menu{
+          display: block;
+          position: absolute;
+          right: 0;
+          top: 20px;
+        }
+        nav{
+          display: none;
+          position: relative;
+          left: 0;
+        }
+        .nav-container.open{
+          background: rgba(0, 0, 0, 0.8);
+        }
+        .nav-container.open nav{
+          display: block;
+        }
+        .nav-container.open nav img{
+          display: none!important;
+          position: static;
+        }
+        .nav-container.show img{
+          position: static!important;
+        }
+        .logo img{
+            float: none;
+        }
+      }
     nav img{
       display: none;
     }
@@ -164,6 +206,18 @@ export default {
     .nav-container.show img{
       display: none;
     }
+    @media (max-width: 1280px) {
+        .nav-container.show{
+          background: rgba(0, 0, 0, 0.8);
+          padding: 0;
+        }
+        .nav-container.show img{
+          display: block;
+          height: 72px;
+          position: absolute;
+          top: 0;
+        }
+      }
     .nav-container.show nav{
       background: rgba(0, 0, 7, 0.52);
     }
@@ -176,12 +230,18 @@ export default {
     nav div{
         display: inline-block;
     }
+    @media (max-width: 1280px) {
+        nav div{
+            display: block;
+        }
+      }    
     nav .subs{
         display: none;
         position: absolute;
         left: 0;
         padding: 40px 0;
         top: 40px;
+        transition: all .3s ease-in-out;
     }
     nav a{
         position: relative;
@@ -209,6 +269,11 @@ export default {
         display: flex;
         justify-content: center;
     }
+    @media (max-width: 1280px) {
+        nav .nav-item:hover .subs{
+            display: none;
+        }
+      } 
     .sub-item{
         margin: 0 10px;
     }

@@ -4,6 +4,12 @@
   "description": "shanghai dehuiwuli guanwang",
   "author": "zhangwei",
   "private": true,
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": "4001"
+    }
+   },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",

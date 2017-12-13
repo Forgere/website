@@ -11,8 +11,56 @@ a,span,b,div,ul,li,ol{
     width: 1120px;
     margin: 0 auto;
 }
+body{
+    font-size: 18px;
+}
+
+@media (max-width: 767px) {
+    body{
+        font-size: 15px;
+    }
+  }
 @media (max-width: 1280px) {
     .c-c {
       width: 980px;
     }
   }
+@media (max-width: 980px) {
+    .c-c {
+        width: 100%;
+    }
+}
+
+.subtitle.title h6{
+    text-align: center;
+}
+.subtitle.title h6.s-line{
+    font-size: 36px;
+}
+@media (max-width: 980px) {
+    .subtitle.title h6.s-line{
+        font-size: 29px;
+    }
+}
+@media (max-width: 525px) {
+    .subtitle.title h6.s-line{
+        font-size: 20px;
+    }
+}
+.full-block{
+    height: 100vh;
+}
+.full-block .full-block-overlay{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+.full-block .full-block-overlay .center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
