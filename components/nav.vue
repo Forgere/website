@@ -22,7 +22,7 @@
                 </nuxt-link>
                 <ul class="subs">
                     <li class="sub-item">
-                        <nuxt-link to="/case">项目规划与设计</nuxt-link>
+                        <nuxt-link to="/business/case">项目规划与设计</nuxt-link>
                     </li>
                     <li class="sub-item">
                         <nuxt-link to="/friend">自动化设备与物流方案动画制作</nuxt-link>
@@ -151,6 +151,9 @@ export default {
           position: relative;
           left: 0;
         }
+        .nav-container{
+          padding: 15px 0;
+        }
         .nav-container.open{
           background: rgba(0, 0, 0, 0.8);
         }
@@ -166,6 +169,8 @@ export default {
         }
         .logo img{
             float: none;
+            width: 120px;
+            margin-left: 20px;
         }
       }
     nav img{
@@ -189,9 +194,11 @@ export default {
         }
         .nav-container.show img{
           display: block;
-          height: 72px;
+          height: 38.6px;
           position: absolute;
           top: 0;
+          margin-top: 15px;
+          margin-bottom: 15px;
         }
       }
     .nav-container.show nav{

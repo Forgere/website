@@ -10,11 +10,12 @@
         </div>
       </div>
     </div>
-    <nuxt-link to="/business/project" class="mian-block mian-block-1">
+    <nuxt-link to="/business/case" class="mian-block mian-block-1">
       <div class="center">
         <div class="title">项目规划与设计</div>
         <ul class="subs">
           <li class="sub-title">工厂智能化物流设计</li>
+         
           <li class="sub-title">方案设计模拟仿真</li>
           <li class="sub-title">方案设计咨询</li>
         </ul>
