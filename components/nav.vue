@@ -120,6 +120,7 @@ export default {
     .logo img{
         float: left;
         width: 200px;
+        margin-left: 50px;
     }
     .nav-wrap .menu{
       display: none;

@@ -232,6 +232,7 @@ body{
     height: 100%;
     flex: 1;
     padding: 40px;
+    position: relative;
 }
 .splitarea .splitarea-word h3 {
     font-size: 38px;
@@ -251,7 +252,7 @@ body{
     width: 100%;
     position: relative;
     top: 50%;
-    transform: translate(0 -50%);
+    transform: translate(0,-50%);
     line-height: 2em;
 }
 @media (max-width: 767px) {
@@ -263,6 +264,7 @@ body{
     } 
     .splitarea .splitarea-word{
         padding: 20px;
+        height: 50%;
     }
     .splitarea .splitarea-word .word-warp{
         line-height: 1.5em;
