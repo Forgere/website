@@ -20,6 +20,18 @@
         </div>
       </div>
     </div>
+    <div class="direction splitarea">
+      <div class="splitarea-word">
+        <div class="word-warp">
+          <h3>经营策略</h3>
+          <p>1.以解决客户最头疼的问题为切入口，提供能够满足客户需求的一体化的解决方案</p>
+          <p>2.以详细的投资回报分析来打消客户的顾虑，提高客户投资的意愿</p>
+          <p>3.以稳定可靠的系统实施和验收， 充足的人员培训和考核实现项目顺利的交接给客户使用。 提高客户的满意度。</p>
+          <p>4.以及时周到的售后服务， 确保客户高枕无忧。</p>
+        </div>
+      </div>
+      <div class="splitarea-img"></div>
+    </div>
     <div class="advantage">
       <h4>经营理念</h4>
       <p>合作共赢，提供增值的一体化自动物流解决方案!<br/>大部分企业，在筹建规划仓储项目时，一提到自动化仓储物流项目， 第一反应就是“投资大，成本高，故障风险高”便望而却步，还是使用传统的仓库。 但是仔细分析了我们给现有的客户做过详细的投资回报对比分析后，客户最终选择了自动库的解决方案。 对比着ＲＯＲ～+15% 左右的投资回报分析， 有个客户甚至紧急叫停了土建投标过程，转而按照新方案重新设计立体库项目。 增值是推动项目的基本要素！</p>
@@ -45,5 +57,23 @@ export default {
 .about .full-block-overlay p{
   color: #fff;
   text-indent: 2em;
+  font-size: 16px;
+  padding: 0 24px;
+}
+.about .full-block-overlay p{
+  color: #fff;
+  text-indent: 2em;
+  font-size: 16px;
+  padding: 0 24px;
+}
+@media (max-width: 980px) {
+  .about .full-block-overlay p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 525px) {
+  .about .full-block-overlay p {
+    font-size: 12px;
+  }
 }
 </style>

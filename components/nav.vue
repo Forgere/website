@@ -17,6 +17,22 @@
                 <nuxt-link to="/about" :class="{'active': routepath === '/about'}">关于我们</nuxt-link>
             </div>
             <div class="nav-item">
+                <nuxt-link to="/business" :class="{'active': routepath === '/business'}">
+                  主营业务
+                </nuxt-link>
+                <ul class="subs">
+                    <li class="sub-item">
+                        <nuxt-link to="/case">项目规划与设计</nuxt-link>
+                    </li>
+                    <li class="sub-item">
+                        <nuxt-link to="/friend">自动化设备与物流方案动画制作</nuxt-link>
+                    </li>
+                    <li class="sub-item">
+                        <nuxt-link to="/friend">仓库管理软件</nuxt-link>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-item">
                 <nuxt-link to="/news" :class="{'active': routepath === '/news'}">
                   公司新闻
                 </nuxt-link>
@@ -29,48 +45,6 @@
                     </li>
                     <li class="sub-item">
                         <nuxt-link to="/friend">合作伙伴</nuxt-link>
-                    </li>
-                </ul> 
-            </div>
-            <div class="nav-item">
-                <nuxt-link to="/design">项目规划设计</nuxt-link>
-                <ul class="subs">
-                    <li class="sub-item">
-                        <nuxt-link to="/il">工厂智能化物流设计</nuxt-link>
-                    </li>
-                    <li class="sub-item">
-                        <nuxt-link to="/simulation">方案设计模拟仿真</nuxt-link>
-                    </li>
-                    <li class="sub-item">
-                        <nuxt-link to="/advisory">方案设计咨询</nuxt-link>
-                    </li>
-                </ul> 
-            </div>
-            <div class="nav-item">
-                <nuxt-link to="/about">方案动画制作</nuxt-link>
-                <ul class="subs">
-                    <li class="sub-item">
-                        <nuxt-link to="/about">动画案例展示</nuxt-link>
-                    </li>
-                    <li class="sub-item">
-                        <nuxt-link to="/about">动画业务咨询</nuxt-link>
-                    </li>
-                    <li class="sub-item">
-                        <nuxt-link to="/about">动画业务流程</nuxt-link>
-                    </li>
-                </ul> 
-            </div>
-            <div class="nav-item">
-                <nuxt-link to="/about">仓库管理软件</nuxt-link>
-                <ul class="subs">
-                    <li class="sub-item">
-                        <nuxt-link to="/about">WMS软件开发</nuxt-link>
-                    </li>
-                    <li class="sub-item">
-                        <nuxt-link to="/about">WCS软件开发</nuxt-link>
-                    </li>
-                    <li class="sub-item">
-                        <nuxt-link to="/about">MES软件开发</nuxt-link>
                     </li>
                 </ul> 
             </div>
