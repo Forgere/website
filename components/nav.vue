@@ -119,6 +119,7 @@ export default {
     }
     .logo img{
         float: left;
+        width: 200px;
     }
     .nav-wrap .menu{
       display: none;
