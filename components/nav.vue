@@ -28,17 +28,19 @@
                         <nuxt-link to="/business/machine_animate">自动化设备与物流方案动画制作</nuxt-link>
                     </li>
                     <li class="sub-item">
-                        <nuxt-link to="/friend">仓库管理软件</nuxt-link>
+                        <nuxt-link to="/business/software">仓库管理软件</nuxt-link>
                     </li>
                 </ul>
             </div>
-            <div class="nav-item">
+            <!-- <div class="nav-item">
                 <nuxt-link to="/news" :class="{'active': routepath === '/news'}">
                   公司新闻
                 </nuxt-link>
-            </div>
+            </div> -->
             <div class="nav-item nav-subs">
-                <nuxt-link to="/project">项目案例</nuxt-link>
+                <nuxt-link to="/project" :class="{'active': routepath === '/project'}">
+                  项目案例
+                </nuxt-link>
                 <ul class="subs">
                     <li class="sub-item">
                         <nuxt-link to="/case">案例介绍</nuxt-link>
@@ -49,21 +51,10 @@
                 </ul> 
             </div>
             <div class="nav-item">
-                <nuxt-link to="/about">招贤纳士</nuxt-link>
-                <ul class="subs">
-                    <li class="sub-item">
-                        <nuxt-link to="/about">人才招聘</nuxt-link>
-                    </li>
-                    <li class="sub-item">
-                        <nuxt-link to="/about">人才培训</nuxt-link>
-                    </li>
-                    <li class="sub-item">
-                        <nuxt-link to="/about">员工案例分享</nuxt-link>
-                    </li>
-                </ul> 
+                <nuxt-link to="/join">招贤纳士</nuxt-link>
             </div>
             <div class="nav-item">
-                <nuxt-link to="/about">联系我们</nuxt-link>
+                <nuxt-link to="/contact">联系我们</nuxt-link>
             </div>      
         </nav>
     </div>

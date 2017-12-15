@@ -98,6 +98,9 @@ body{
     -o-animation: wipe 15s ease infinite;
     animation: wipe 15s ease infinite;
   }
+  .video-container .overlay{
+    height: 100vh;
+  }
   .home-banner{
     width: 100%;
   }

@@ -31,7 +31,7 @@
         </ul>
       </div>
     </nuxt-link>
-    <div class="mian-block mian-block-3">
+    <nuxt-link to="/business/software" class="mian-block mian-block-3">
       <div class="center">
         <div class="title">仓库管理软件</div>
         <ul class="subs">
@@ -41,7 +41,7 @@
           <li class="sub-title">生活应用类软件</li>
         </ul>
       </div>
-    </div>
+    </nuxt-link>
   </div>
 </template>
 <script>
