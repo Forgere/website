@@ -25,7 +25,7 @@
                         <nuxt-link to="/business/case">项目规划与设计</nuxt-link>
                     </li>
                     <li class="sub-item">
-                        <nuxt-link to="/friend">自动化设备与物流方案动画制作</nuxt-link>
+                        <nuxt-link to="/business/machine_animate">自动化设备与物流方案动画制作</nuxt-link>
                     </li>
                     <li class="sub-item">
                         <nuxt-link to="/friend">仓库管理软件</nuxt-link>

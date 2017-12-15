@@ -14,12 +14,12 @@ module.exports = {
     ]
   },
   css: [
-    { src: '~/css/global.css'},
+    { src: '~/css/global.css' },
     'video.js/dist/video-js.css'
   ],
   plugins: [
     '~plugins/vue-awesome',
-    { src: '~plugins/nuxt-video-player-plugin.js', ssr: false },
+    { src: '~plugins/myvideo.js', ssr: false },
     { src: '~plugins/routetrigger.js', ssr: false }
   ],
   /*

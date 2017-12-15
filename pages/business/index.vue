@@ -20,8 +20,8 @@
           <li class="sub-title">方案设计咨询</li>
         </ul>
       </div>
-    </nuxt-link>
-    <div class="mian-block mian-block-2">
+    </nuxt-link>   
+    <nuxt-link to="/business/machine_animate" class="mian-block mian-block-2">
       <div class="center">
         <div class="title">自动化设备与物流方案动画制作</div>
         <ul class="subs">
@@ -30,7 +30,7 @@
           <li class="sub-title">动画业务流程</li>
         </ul>
       </div>
-    </div>
+    </nuxt-link>
     <div class="mian-block mian-block-3">
       <div class="center">
         <div class="title">仓库管理软件</div>

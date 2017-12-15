@@ -10,7 +10,7 @@
         </div>
       </div>
       <div class="video">
-        <video id="video-player" class="video-bg" poster="/_nuxt/img/index.15e6b17.jpg" loop="" autoplay="" preload="" muted="" width="100%">
+        <video id="video-player" class="video-bg" poster="/index.15e6b17.jpg" loop="" autoplay="" preload="" muted="" width="100%">
           <source src="http://10873657.s21d-10.faiusrd.com/58/ABUIABA6GAAgvJfhwAUooLjrvAM.mp4" type="video/mp4">
         </video>
       </div>
