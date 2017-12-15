@@ -118,7 +118,6 @@ export default {
   bottom: 0;
   z-index: 12;
   background-color: rgba(0,0,0,0.8);
-  padding: 0 20px;
 }
 .business_machine_animate .video-wrap .close{
   position: fixed;
@@ -130,7 +129,7 @@ export default {
   cursor: pointer;
 }
 .business_machine_animate .video-player-box .video-js{
-  position: relative;
+  position: fixed;
   top: 50%;
   transform: translateY(-50%);
   width: 100%;
