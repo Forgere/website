@@ -51,7 +51,7 @@ export default {
   min-height: 100vh;
 }
 .about .full-block.intro{
-  background: url('~\assets\class1.jpg') center no-repeat;
+  background: url('../../assets/class1.jpg') center no-repeat;
   background-size: cover;
 }
 .about .full-block-overlay p{

@@ -106,7 +106,7 @@ export default {
   z-index: 1;
 }
 .mian-block-1{
-  background: url('~assets/class1.jpg') center no-repeat;
+  background: url('../../assets/class1.jpg') center no-repeat;
   background-size: cover;
 }
 .mian-block-2{

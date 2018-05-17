@@ -43,10 +43,10 @@
                 </nuxt-link>
                 <ul class="subs">
                     <li class="sub-item">
-                        <nuxt-link to="/case">案例介绍</nuxt-link>
+                        <nuxt-link to="/project/case">案例介绍</nuxt-link>
                     </li>
                     <li class="sub-item">
-                        <nuxt-link to="/friend">合作伙伴</nuxt-link>
+                        <nuxt-link to="/project/friend">合作伙伴</nuxt-link>
                     </li>
                 </ul> 
             </div>

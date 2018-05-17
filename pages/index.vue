@@ -27,7 +27,7 @@
     </div>
     <div class="main-job">
       <div class="job-item">
-        <img src="~/assets/class1.jpg" alt="">
+        <img src="../assets/class1.jpg" alt="">
         <div class="card-img-overlay card-block">
           <h4 class="card-title">
             仓储物流服务
